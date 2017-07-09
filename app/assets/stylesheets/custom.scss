@@ -2,14 +2,20 @@
 @import "bootstrap";
 
 body{
-	padding-top: 52px; 
+	
 }
 
-
+.peopleCarouselImg img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
 
 .jumbotron{
-	background-color:#85e5df;
+	
 	color:white;
+  margin-bottom:0;
+  background-image: image-url('pic2.jpg')
 }
 
 
