@@ -21,8 +21,9 @@ body{
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #3378e8;
+    background-color: #1CE8A9;
     overflow: hidden;
+    display:transparent;
 }
 
 /* Style the links inside the navigation bar */
@@ -38,7 +39,7 @@ body{
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #0d47a5;
+    background-color: #2CFF81;
     color: #e0e0e0;
 }
 
