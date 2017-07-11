@@ -16,6 +16,7 @@ body{
   text-align:center;
 }
 
+
 h1{
   font-weight:700;
 }
@@ -46,6 +47,7 @@ h2 span{
 #content{
   margin:0 30px;
 }
+
 
 
 /* Add a black background color to the top navigation */
@@ -93,6 +95,7 @@ h2 span{
   }
 }
 
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
@@ -107,7 +110,6 @@ h2 span{
     text-align: left;
   }
 }
-
 
 
 /*
@@ -150,4 +152,162 @@ body:after{
 }
 
 */
+
+/* Project view */
+
+.key{
+  width:60px;
+  height:60px; 
+  border-radius:30px;
+  display:inline-block;
+  color:white;
+  text-align:center;
+  vertical-align:center;
+  line-height:60px;
+  margin:0 20px;
+}
+
+#key-container{
+  width:60%;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+
+
+
+.ruby-key{
+  background-color: #E8513D;
+}
+
+.java-key{
+  background-color: #1FCAF9;
+}
+
+.htcss-key{
+  background-color:#FFA44C;
+}
+
+#project-container{
+  width:90%;
+  margin:auto;
+  font-size:0;
+  max-width:921px;
+}
+
+
+.project-item{
+  width:400px;
+  height:666px;
+  margin:0 auto;
+  margin-bottom:50px;
+  overflow:hidden;
+  position:relative;
+}
+
+#project-item-l{
+  float:left;
+}
+
+#project-item-r{
+  float:right;
+}
+
+.project-description{
+  width:100%;
+  height:30%;
+  position:absolute;
+  bottom:0;
+  
+  overflow:hidden;
+}
+
+.project-description p{
+  padding-top:10px;
+  font-size:22px;
+  text-align:justify;
+}
+
+.project-display{
+  width:100%;
+  height:60%;
+  position:absolute;
+  top:10%;
+}
+
+.project-heading{
+  width:100%;
+  height:10%;
+  position:absolute;
+  color:white;
+  background-color:#1FCAF9;
+  top:0;
+  border-radius:10px;
+}
+
+.project-display img{
+  width:100%;
+  height:100%;
+  -webkit-filter:opacity(50%);
+}
+
+.project-display img:hover{
+  -webkit-filter:none;
+}
+
+.java:hover{
+  background-color:#0086FF;
+}
+
+.htcss{
+  background-color:#FFA44C;
+}
+
+.htcss:hover{
+  background-color: #FF8B00;
+}
+
+.ruby{
+  background-color: #E8513D;
+}
+
+.ruby:hover{
+  background-color: #E81D00;
+}
+
+@media (max-width:480px){
+  .project-item{
+    width:300px;
+    height:500px;
+  }
+
+  .project-heading h1{
+    display:block;
+    vertical-align:center;
+    line-height:20px;
+  }
+
+  .project-description p{
+    font-size:18px;
+  }
+}
+
+@media (max-width: 600px){
+  #key-container{
+  width:100%;
+  }
+}
+
+
+
+@media (max-width:1023px){
+  #project-item-l, #project-item-r{
+    float:none;
+  }
+}
+
+
+
+
+
 
