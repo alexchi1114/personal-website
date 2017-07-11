@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
+  resources :feedbacks, only: [:new, :create]
+
 end

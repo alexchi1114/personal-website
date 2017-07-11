@@ -1,0 +1,15 @@
+<%= form_for(@feedback) do |f| %>
+	
+	<%= f.label :name %>
+     <%= f.text_field :name, class: 'form-control' %>
+
+     <%= f.label :subject %>
+     <%= f.text_field :subject, class: 'form-control' %>
+
+      <%= f.label :body %>
+      <%= f.text_field :body, class: 'form-control' %>
+
+
+    <%= f.button :submit, :class=> "btn btn-primary" %>
+   
+  <% end %>
