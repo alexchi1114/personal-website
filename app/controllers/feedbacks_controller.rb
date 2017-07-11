@@ -6,6 +6,7 @@ class FeedbacksController < ApplicationController
 	def create
 		@feedback = Feedback.new(feedback_params)
     	if @feedback.save
+        FeedbackMailer.feedback_email(@feedback).deliver
     	  flash[:info] = "Wow, that worked"
     	  redirect_to root_url
     	else
