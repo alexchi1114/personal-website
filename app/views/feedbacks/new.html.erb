@@ -1,3 +1,8 @@
+<div class = 'text-center'>	
+	<h1>Contact</h1>
+	<h3>Leave me a message!</h3>
+</div>
+<div class = 'container'>
 <%= form_for(@feedback) do |f| %>
 	
 	<%= f.label :name %>
@@ -7,9 +12,11 @@
      <%= f.text_field :subject, class: 'form-control' %>
 
       <%= f.label :body %>
-      <%= f.text_field :body, class: 'form-control' %>
-
-
-    <%= f.button :submit, :class=> "btn btn-primary" %>
+      <%= f.text_area :body, class: 'form-control' %>
+      <br>
+     <div class = 'text-center' id = 'feedback-button'>
+   		<%= f.button :Submit, :class=> "btn btn-primary", :id=> "feedback-button" %>
+   	</div>
    
   <% end %>
+</div>
