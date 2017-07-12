@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get '/about', to: 'static_pages#about'
 
+  get '/resume', to: 'static_pages#resume'
+
   root 'static_pages#home'
 
   resources :feedbacks, only: [:new, :create]
