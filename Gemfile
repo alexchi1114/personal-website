@@ -10,6 +10,7 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.6.1'
 gem 'sendgrid-ruby'
+gem 'figaro'
 
 
 group :development, :test do
