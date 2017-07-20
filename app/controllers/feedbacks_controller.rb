@@ -8,7 +8,7 @@ class FeedbacksController < ApplicationController
     	if @feedback.save
         flash[:success] = "Thank you for your message. I will get back to you as soon as possible!"
         FeedbackMailer.feedback_email(@feedback).deliver
-    	  redirect_to root_url
+    	  redirect_to new_feedback_path
     	else
       	render 'new'
     	end
