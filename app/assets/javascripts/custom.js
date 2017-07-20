@@ -7,11 +7,43 @@ function myFunction() {
     }
 }
 
+
+
 $(document).ready(function(){
+
     myMap();
+
 });
 
 $(document).on('turbolinks:load',function(){
+    $("#new_feedback").validate({
+        
+        rules: {
+            "feedback[name]": {
+                required:true, 
+                maxlength:50
+            },
+            "feedback[subject]": {
+                required:true, 
+                maxlength:50
+            },
+            "feedback[email]": {
+                required: true,
+                email:true
+            },
+            "feedback[body]": {
+                required:true,
+                maxlength:500
+            }
+        },
+        messages: {
+            "feedback[name]": "Please specify your name",
+            "feedback[email]": {
+                required: "Please put an email address so I can get back to you.",
+                email: "Your email address must be in the format of name@domain.com"
+            }
+        }
+    });
     myMap();
 });
 
