@@ -6,6 +6,7 @@ class FeedbacksController < ApplicationController
 	def create
 		@feedback = Feedback.new(feedback_params)
     	if @feedback.save
+        flash[:success] = "Thank you for your message. I will get back to you as soon as possible!"
         FeedbackMailer.feedback_email(@feedback).deliver
     	  redirect_to root_url
     	else
@@ -15,6 +16,6 @@ class FeedbacksController < ApplicationController
 
 	private 
   	def feedback_params
-  		params.require(:feedback).permit(:name, :subject, :body)                       
+  		params.require(:feedback).permit(:name, :subject, :body, :email)                       
  	 end
 end

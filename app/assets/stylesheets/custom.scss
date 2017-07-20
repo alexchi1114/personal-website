@@ -5,17 +5,16 @@ body{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.peopleCarouselImg img {
-  width: auto;
-  height: 225px;
-  max-height: 225px;
-}
+/* Home Page */
 
 #button-container{
   margin:0 auto;
   text-align:center;
 }
 
+.alert{
+  margin-bottom:0;
+}
 
 h1{
   font-weight:700;
@@ -43,6 +42,7 @@ h2{
 h2 span{
   border-bottom:1px solid black;
 }
+
 
 #content{
   margin:0 30px;
@@ -173,9 +173,6 @@ body:after{
   margin-bottom:20px;
 }
 
-
-
-
 .ruby-key{
   background-color: #E8513D;
 }
@@ -194,7 +191,6 @@ body:after{
   font-size:0;
   max-width:921px;
 }
-
 
 .project-item{
   width:400px;
@@ -242,7 +238,8 @@ body:after{
   color:white;
   background-color:#1FCAF9;
   top:0;
-  border-radius:10px;
+  border-radius:2px;
+  border:solid gray 1px;
 }
 
 .project-display img{
@@ -312,6 +309,7 @@ body:after{
   margin:0 auto;
   width:60%;
 }
+
 
 /* Resume View */
 

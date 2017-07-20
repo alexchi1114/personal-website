@@ -4,16 +4,19 @@
 </div>
 <div class = 'container'>
 <%= form_for(@feedback) do |f| %>
-	
-	<%= f.label :name %>
+	   <%= render 'shared/error_messages', object: f.object %>
+	   <%= f.label :name %>
      <%= f.text_field :name, class: 'form-control' %>
-
+     <br>
+     <%= f.label :email %>
+     <%= f.email_field :email, class: 'form-control' %>
+     <br>
      <%= f.label :subject %>
      <%= f.text_field :subject, class: 'form-control' %>
-
-      <%= f.label :body %>
-      <%= f.text_area :body, class: 'form-control' %>
-      <br>
+     <br>
+    <%= f.label :body %>
+    <%= f.text_area :body, class: 'form-control' %>
+    <br>
      <div class = 'text-center' id = 'feedback-button'>
    		<%= f.button :Submit, :class=> "btn btn-primary", :id=> "feedback-button" %>
    	</div>
