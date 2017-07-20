@@ -37,7 +37,18 @@ $(document).on('turbolinks:load',function(){
             }
         },
         messages: {
-            "feedback[name]": "Please specify your name",
+            "feedback[name]": {
+                required: "Please put your name so I know who you are.",
+                maxlength: "Keep your name under 50 characters please!"
+            },
+            "feedback[subject]": {
+                required: "Please put the subject of your message.",
+                maxlength: "Keep the subject under 50 characters please!"
+            },
+            "feedback[body]": {
+                required: "Looks like you forgot to actually say something here...",
+                maxlength: "Keep your message under 500 characters please! I don't have all day to read this!"
+            },
             "feedback[email]": {
                 required: "Please put an email address so I can get back to you.",
                 email: "Your email address must be in the format of name@domain.com"
